@@ -1,0 +1,38 @@
+{
+    "IDAMetadataDescriptorVersion": 1,
+    "plugin": {
+        "name": "instrlen",
+        "entryPoint": "instrlen",
+        "version": "1.0.0",
+        "logoPath": "img/example.png",
+        "idaVersions": [
+            "9.0",
+            "9.1",
+            "9.2"
+        ],
+        "platforms": [
+            "windows-x86_64",
+            "linux-x86_64",
+            "macos-aarch64"
+        ],
+        "description": "Forces instruction lengths for binary files.",
+        "license": "MIT",
+        "urls": {
+            "repository": "https://github.com/milankovo/instrlen"
+        },
+        "authors": [
+            {
+                "name": "milankovo",
+                "email": "instrlen@noreply.github.com"
+            }
+        ],
+        "categories": [
+            "disassembly-and-processor-modules"
+        ],
+        "keywords": [
+            "disassembly",
+            "binary-analysis",
+            "instruction-length"
+        ]
+    }
+}
