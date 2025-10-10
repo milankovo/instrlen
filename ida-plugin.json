@@ -3,7 +3,7 @@
     "plugin": {
         "name": "instrlen",
         "entryPoint": "instrlen",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "logoPath": "img/example.png",
         "idaVersions": [
             "9.0",
