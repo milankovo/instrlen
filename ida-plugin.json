@@ -3,7 +3,7 @@
     "plugin": {
         "name": "instrlen",
         "entryPoint": "instrlen",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "logoPath": "img/example.png",
         "idaVersions": [
             "9.0",
@@ -22,7 +22,7 @@
         },
         "authors": [
             {
-                "name": "milankovo",
+                "name": "Milankovo",
                 "email": "instrlen@noreply.github.com"
             }
         ],

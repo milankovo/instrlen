@@ -198,7 +198,18 @@ ssize_t idaapi instruction_resizer_t::handle_post_event(ssize_t retcode, int not
 //--------------------------------------------------------------------------
 static plugmod_t *idaapi init()
 {
-	return new instruction_resizer_t();
+	plugmod_t *result = new instruction_resizer_t();
+	
+	// Register addon with IDA
+	addon_info_t addon;
+	addon.id = "milankovo.instrlen";
+	addon.name = "Change Instruction Length";
+	addon.producer = "Milankovo";
+	addon.url = "https://github.com/milankovo/instrlen";
+	addon.version = "1.0.2";
+	register_addon(&addon);
+	
+	return result;
 }
 
 //--------------------------------------------------------------------------
