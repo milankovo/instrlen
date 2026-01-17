@@ -99,6 +99,8 @@ jobs:
           mkdir -p artifacts
           cp -v ./ida-sdk/bin/plugins/instrlen* artifacts/
           jq '.plugin.idaVersions = "==${{ matrix.ida.version }}"' ida-plugin.json > artifacts/ida-plugin.json
+          cp ./README.md artifacts/
+          cp -r ./img artifacts/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
